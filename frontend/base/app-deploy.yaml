@@ -12,7 +12,7 @@ metadata:
     stack.appsody.dev/title: Node.js Express
   creationTimestamp: null
   labels:
-    app.appsody.dev/name: fruit
+    app.kubernetes.io/part-of: fruit
     image.opencontainers.org/title: frontend
     stack.appsody.dev/id: nodejs-express
     stack.appsody.dev/version: 0.3.0

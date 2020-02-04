@@ -22,4 +22,4 @@ spec:
     kind: ConfigMap
   selector:
     matchLabels:
-      app.appsody.dev/name: fruit
+      app.kubernetes.io/part-of: fruit
