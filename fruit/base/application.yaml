@@ -1,0 +1,25 @@
+apiVersion: app.k8s.io/v1beta1
+kind: Application
+metadata:
+  labels:
+    app.kubernetes.io/name: fruit
+    app.kubernetes.io/version: 1.0.0
+  name: backend
+  namespace: default
+spec:
+  componentKinds:
+  - group: App
+    kind: Deployment
+  - group: App
+    kind: StatefulSet
+  - group: App
+    kind: Service
+  - group: App
+    kind: Route
+  - group: App
+    kind: Ingress
+  - group: App
+    kind: ConfigMap
+  selector:
+    matchLabels:
+      app.kubernetes.io/part-of: fruit
